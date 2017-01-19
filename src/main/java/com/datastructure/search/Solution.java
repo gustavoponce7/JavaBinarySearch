@@ -76,6 +76,11 @@ public class Solution {
 				
 		int middle = (start + end)/2;
 		
+		if(end < start){
+			 return -1;
+		} 
+		
+		
 		if (search < array[middle]){
 			return binarySearchRecursive(search, array, start, middle - 1);
 		}
